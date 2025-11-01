@@ -64,7 +64,7 @@ class AlunoController extends Controller
             return response()->json(['message' => 'Aluno não encontrado'], 404);
         }
 
-        return response()->json($aluno, 200);
+        return response()->json($aluno, 200); //professor, estamos retornando no formato json para testar no postman
     }
 
     // Atualiza um aluno existente
